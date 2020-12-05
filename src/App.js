@@ -1,15 +1,14 @@
-import logo from './logo.svg';
-import HeaderNav from './components/HeaderNav';
-import FeaturesSection from './components/FeaturesSections';
-import SectionMeals from './components/SectionMeals';
+import Home from './pages/Home';
 import './App.css';
+
 
 function App() {
   return (
     <>
-      <HeaderNav />
+      {/* <HeaderNav />
       <FeaturesSection />
-      <SectionMeals />
+      <SectionMeals /> */}
+      <Home />
     </>
   )
 }
