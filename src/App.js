@@ -1,16 +1,38 @@
 import Home from './pages/Home';
+import FoodDelivery from './pages/FoodDelivery';
+import NotFound from './pages/NotFound'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
 
 
-function App() {
+export default function App() {
+  // pages with no routing
+  // return (
+  //   <>
+  //     <Home />
+  //     <FoodDelivery />
+  //   </>
+  // )
   return (
-    <>
-      {/* <HeaderNav />
-      <FeaturesSection />
-      <SectionMeals /> */}
-      <Home />
-    </>
+    <Router>
+      {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+      <Switch>
+        <Route exact path="/food-delivery">
+          <FoodDelivery />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route>
+          <NotFound />
+        </Route>
+      </Switch>
+    </Router>
   )
 }
-
-export default App;
