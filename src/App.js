@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import HeaderNav from './components/HeaderNav';
 import FeaturesSection from './components/FeaturesSections';
+import SectionMeals from './components/SectionMeals';
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <HeaderNav />
       <FeaturesSection />
+      <SectionMeals />
     </>
   )
 }

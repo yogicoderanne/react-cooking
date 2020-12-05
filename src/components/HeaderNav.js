@@ -5,7 +5,7 @@ export default function HeaderNav() {
     <header>
       <nav>
         <div class="row">
-          <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo" />
+          <img src="/img/logo-white.png" alt="Omnifood logo" class="logo" />
           <ul class="main-nav">
             <li><a href="#">Food Delivery</a></li>
             <li><a href="#">How it Works</a></li>
