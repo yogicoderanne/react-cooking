@@ -1,11 +1,11 @@
 import React from "react";
 import JavascriptTest from '../components/JavascriptTest'
 
-export default function FoodDelivery() {
+export default function HowItWorks() {
   return (
     <>
       <div>
-        Food Delivery
+        Operations
       </div>
       <JavascriptTest />
     </>
